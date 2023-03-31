@@ -34,6 +34,10 @@ try {
       var subject = "Issue #: " + issue["title"] + " was closed";
       var body = `${issue["user"]["login"]} closed an issue. ${issue["body"]}. More info here: ${issue["html_url"]}`
 
+    } else if (event_action == "labeled") {
+
+      var subject = "Issue #: " + issue["title"] + " was labeled";
+      var body = `${issue["user"]["login"]} labeled an issue. ${issue["body"]}. More info here: ${issue["html_url"]}`
     }
 
   } else if (github.context.eventName == "issue_comment") {

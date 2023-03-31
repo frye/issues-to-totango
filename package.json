@@ -4,7 +4,8 @@
   "description": "This action creates a Totango touchpoint when a new issue is created",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\"",
+    "build": "ncc build index.js"
   },
   "repository": {
     "type": "git",
